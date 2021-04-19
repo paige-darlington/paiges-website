@@ -1,0 +1,45 @@
+<head>
+
+<title>Welcome to paige's website!</title>
+
+<style>
+body { background:hotpink; }
+
+button {
+	 background:white;
+	color:black;
+	border-radius:100px;
+	width 400px;
+	height:30px;
+	}
+
+
+
+</style>
+
+</head>
+
+<body>
+<h1> hello! my name is paige and this is my website!! </h1>
+<p style="color:turquoise;">On this website you will see pictures of cute clothing!</p>
+<img src="https://i.pinimg.com/originals/1a/1c/91/1a1c91e99beb42db043fc2d94f55f521.jpg" width=300px height = 400px> 
+  <img src="https://i.pinimg.com/originals/54/db/28/54db289c48c89287b11d823f2d994cb4.jpg" width=200px height = 400px> 
+  <img src="https://i.pinimg.com/originals/59/dd/ca/59ddca3d3c0b977f6f282dee68f2d8ba.jpg" width=300px height = 400px> 
+  
+
+<button onclick="changeBG()" > click this button to change the background color!!</button>
+
+<script>
+function helloJS() { alert('u clicked the button!'); }
+
+function changeBG() {
+
+var x = Math.floor( Math.random()*256);
+var y = Math.floor(Math.random()*256);
+var z = Math.floor(Math.random()*256);
+var bgColor="rgb("+x+","+y+","+z+")";
+document.body.style.background=bgColor;
+ }
+</script>
+<link href="websiteStyle.css" rel="stylesheet" type="text/css">
+</body>
